@@ -23,7 +23,7 @@ function Projects() {
   const rootRef = useRef();
   const projectRefs = useRef([]);
 
-  const newProjects = [projects[0], projects[1], projects[4]];
+  const newProjects = projects;
 
   const setupProjectAnimations = () => {
     const ctx = gsap.context(() => {
