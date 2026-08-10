@@ -7,6 +7,7 @@ import styles from '@src/pages/components/about/styles/about.module.scss';
 import useIsMobile from '@src/hooks/useIsMobile';
 import { useIsomorphicLayoutEffect } from '@src/hooks/useIsomorphicLayoutEffect';
 import { useRef } from 'react';
+import { A } from '@src/constants/assets';
 
 function About() {
   const isMobile = useIsMobile();
@@ -42,7 +43,7 @@ function About() {
 
   const renderImageContainer = () => (
     <div className={styles.imageContainer}>
-      <Image priority src="/giats/front.webp" sizes="100%" fill alt="Aditya Shirsatrao" />
+      <Image priority src={A('/giats/front.webp')} sizes="100%" fill alt="Aditya Shirsatrao" />
     </div>
   );
 

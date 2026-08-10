@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { Physics } from '@react-three/rapier';
 import Sticker from '@src/components/dom/prefooter/Sticker';
 import useIsMobile from '@src/hooks/useIsMobile';
+import { A } from '@src/constants/assets';
 import { useThree } from '@react-three/fiber';
 
 function Lighting() {
@@ -66,28 +67,28 @@ function FruitNinja() {
   const { viewport } = useThree();
   const isMobile = useIsMobile();
   const textures = useTexture([
-    '/logos/threejs.webp',
-    '/logos/bug.webp',
-    '/logos/docker.webp',
-    '/logos/git.webp',
-    '/logos/gsap.webp',
-    '/logos/nodejs.webp',
-    '/logos/npm.webp',
-    '/logos/react.webp',
-    '/logos/typescript.webp',
-    '/logos/vscode.webp',
+    A('/logos/threejs.webp'),
+    A('/logos/bug.webp'),
+    A('/logos/docker.webp'),
+    A('/logos/git.webp'),
+    A('/logos/gsap.webp'),
+    A('/logos/nodejs.webp'),
+    A('/logos/npm.webp'),
+    A('/logos/react.webp'),
+    A('/logos/typescript.webp'),
+    A('/logos/vscode.webp'),
   ]);
   const slicedTextures = useTexture([
-    '/logos/sliced/threejsSliced.webp',
-    '/logos/sliced/bugSliced.webp',
-    '/logos/sliced/dockerSliced.webp',
-    '/logos/sliced/gitSliced.webp',
-    '/logos/sliced/gsapSliced.webp',
-    '/logos/sliced/nodejsSliced.webp',
-    '/logos/sliced/npmSliced.webp',
-    '/logos/sliced/reactSliced.webp',
-    '/logos/sliced/typescriptSliced.webp',
-    '/logos/sliced/vscodeSliced.webp',
+    A('/logos/sliced/threejsSliced.webp'),
+    A('/logos/sliced/bugSliced.webp'),
+    A('/logos/sliced/dockerSliced.webp'),
+    A('/logos/sliced/gitSliced.webp'),
+    A('/logos/sliced/gsapSliced.webp'),
+    A('/logos/sliced/nodejsSliced.webp'),
+    A('/logos/sliced/npmSliced.webp'),
+    A('/logos/sliced/reactSliced.webp'),
+    A('/logos/sliced/typescriptSliced.webp'),
+    A('/logos/sliced/vscodeSliced.webp'),
   ]);
   const fruits = useFruitSpawner(viewport, textures, slicedTextures, isMobile);
 

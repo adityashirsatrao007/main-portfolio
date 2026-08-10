@@ -7,6 +7,7 @@ import styles from '@src/pages/about/components/hero/styles/hero.module.scss';
 import useIsMobile from '@src/hooks/useIsMobile';
 import { useIsomorphicLayoutEffect } from '@src/hooks/useIsomorphicLayoutEffect';
 import { useWindowSize } from '@darkroom.engineering/hamo';
+import { A } from '@src/constants/assets';
 
 function Hero() {
   const rootRef = useRef();
@@ -52,7 +53,7 @@ function Hero() {
       </header>
       <div className={styles.wrapper}>
         <div ref={heroImageRef} className={styles.imageContainer}>
-          <Image priority quality={100} src="/giats/back.webp" sizes="100%" fill alt="Aditya Shirsatrao Back" />
+          <Image priority quality={100} src={A('/giats/back.webp')} sizes="100%" fill alt="Aditya Shirsatrao Back" />
         </div>
       </div>
     </section>

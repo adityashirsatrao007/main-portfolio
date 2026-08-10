@@ -1,9 +1,11 @@
 import NextHead from 'next/head';
 import { NextSeo } from 'next-seo';
 import PropTypes from 'prop-types';
+import { A } from '@src/constants/assets';
 
 const SITE_URL = 'https://adityashirsatrao007.github.io';
-const OG_IMAGE = `${SITE_URL}/og.png`;
+const SITE_URL_WITH_BASE = `${SITE_URL}/main-portfolio`;
+const OG_IMAGE = `${SITE_URL_WITH_BASE}/og.png`;
 
 const getSchema = () => ({
   '@context': 'http://schema.org',
@@ -52,12 +54,12 @@ function CustomHead({ title = '', description, keywords }) {
         <meta name="twitter:image" content={OG_IMAGE} />
 
         {/* Favicons */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333" />
+        <link rel="icon" href={A('/favicon.ico')} />
+        <link rel="apple-touch-icon" sizes="180x180" href={A('/apple-touch-icon.png')} />
+        <link rel="icon" type="image/png" sizes="32x32" href={A('/favicon-32x32.png')} />
+        <link rel="icon" type="image/png" sizes="16x16" href={A('/favicon-16x16.png')} />
+        <link rel="manifest" href={A('/site.webmanifest')} />
+        <link rel="mask-icon" href={A('/safari-pinned-tab.svg')} color="#333333" />
         <meta name="msapplication-TileColor" content="#f0f4f1" />
         <meta name="theme-color" content="#f0f4f1" />
 

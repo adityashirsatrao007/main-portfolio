@@ -9,6 +9,7 @@ import { useRef, useState } from 'react';
 
 import { useIntersection } from 'react-use';
 import useScroll from '@src/hooks/useScroll';
+import { A } from '@src/constants/assets';
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
@@ -66,10 +67,10 @@ function Band({ maxSpeed = 50, minSpeed = 10, name, intersected }) {
   const ang = new THREE.Vector3();
   const rot = new THREE.Vector3();
   const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 2, linearDamping: 2 };
-  const { nodes, materials } = useGLTF(`/model/Tag.glb`);
+  const { nodes, materials } = useGLTF(A(`/model/Tag.glb`));
 
-  const texture = useTexture(`/model/Band${name}.png`);
-  const tag = useTexture(`/model/Tag${name}.png`);
+  const texture = useTexture(A(`/model/Band${name}.png`));
+  const tag = useTexture(A(`/model/Tag${name}.png`));
 
   const [curve] = useState(() => new THREE.CatmullRomCurve3([new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]));
 

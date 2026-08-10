@@ -1,3 +1,5 @@
+import { A } from './assets';
+
 const projects = [
   {
     id: 'order-matching-engine',
@@ -35,7 +37,7 @@ const projects = [
     img: '/project2/project2.webp',
     link: '/projects/sentinelx',
     date: '2026',
-liveLink: 'https://car-oven-rely-dramatically.trycloudflare.com',
+    liveLink: 'https://car-oven-rely-dramatically.trycloudflare.com',
     company: 'SentinelX',
     primary: '#05080F',
     accentColor: '#22D3EE',
@@ -65,7 +67,7 @@ liveLink: 'https://car-oven-rely-dramatically.trycloudflare.com',
     img: '/project3/project3.webp',
     link: '/projects/tracelify',
     date: '2026',
-liveLink: 'https://flag-greater-exploring-species.trycloudflare.com',
+    liveLink: 'https://flag-greater-exploring-species.trycloudflare.com',
     company: 'Tracelify',
     primary: '#070711',
     accentColor: '#7C6CFF',
@@ -150,4 +152,9 @@ liveLink: 'https://flag-greater-exploring-species.trycloudflare.com',
     ],
   },
 ];
-export default projects;
+
+export default projects.map((project) => ({
+  ...project,
+  img: A(project.img),
+  images: project.images.map((image) => ({ ...image, src: A(image.src) })),
+}));

@@ -8,6 +8,7 @@ import { useMemo, useRef, useState } from 'react';
 
 import PropTypes from 'prop-types';
 import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
+import { A } from '@src/constants/assets';
 
 extend({ RoundedBoxGeometry });
 
@@ -50,7 +51,7 @@ export default function MagicBall({ roughness, color, isSphere, text }) {
   return (
     <View>
       <Marble roughness={roughness} color={color} isSphere={isSphere} text={text} />
-      <Environment files={isSphere ? '/other/warehouse.hdr' : '/other/studio_small_09_1k.hdr'} blur={1} />
+      <Environment files={isSphere ? A('/other/warehouse.hdr') : A('/other/studio_small_09_1k.hdr')} blur={1} />
     </View>
   );
 }
@@ -147,9 +148,9 @@ function MagicMarbleMaterial({ roughness, color, texture, isSphere }) {
   const rayOrigPos = DEFAULT_RAY_ORIG_POS;
   THREE.Cache.enabled = true;
   const [baseTexture1, baseTexture2, heightVolumeTexture1] = useTexture([
-    '/other/noise1.png',
-    '/other/peakpx.jpg',
-    '/other/noise2.png',
+    A('/other/noise1.png'),
+    A('/other/peakpx.jpg'),
+    A('/other/noise2.png'),
   ]);
 
   const configureTexture = (texture) => {
