@@ -16,6 +16,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx next build
+      - run: cp out/index.html out/404.html
       - uses peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
