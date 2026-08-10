@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  basePath: '/main-portfolio',
+  assetPrefix: '/main-portfolio',
   pageExtensions: ['page.jsx'],
   experimental: {
     // optimizeCss: true,
@@ -11,7 +14,7 @@ const nextConfig = {
   // },
   reactStrictMode: false, // Recommended for the `pages` directory, default in `app`.
 
-  images: {},
+  images: { unoptimized: true },
   webpack(config, { isServer }) {
     // config.resolve.alias = {
     //   ...config.resolve.alias,
