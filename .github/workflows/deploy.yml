@@ -1,25 +1,22 @@
 name: Deploy to Vercel
-
 on:
   push:
     branches: [main]
   workflow_dispatch:
-
+concurrency:
+  group: vercel-deploy
+  cancel-in-progress: true
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install deps
-        run: npm ci
-
       - name: Deploy to Vercel
-        uses: amondett/vercel-action@v25
+        uses: amondnet/vercel-action@v42
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: team_b8HZdpfJVQeRW0QhaLkQI7vP
           vercel-project-id: prj_DmcTKAyvJWb5lmFNO0JZD0GEaddS
           vercel-args: '--prod'
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          vercel-wait: 60
+          vercel-wait: 90
