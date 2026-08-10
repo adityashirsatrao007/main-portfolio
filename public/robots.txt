@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://giats.me/
+Host: https://adityashirsatrao007.github.io/main-portfolio/
 
 # Sitemaps
-Sitemap: https://giats.me/sitemap.xml
+Sitemap: https://adityashirsatrao007.github.io/main-portfolio/sitemap.xml

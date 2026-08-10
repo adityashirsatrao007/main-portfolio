@@ -82,11 +82,11 @@ function Page({ id }) {
     () => ({
       title: `Aditya Shirsatrao - ${currentProject.title} Project`,
       description: `Check out my work on the ${currentProject.title} project, collaborating with ${currentProject.company}, where I enhanced frontend development with responsive design and optimized user interactions.`,
+      path: `/projects/${currentProject.id}`,
       keywords: [
         `${currentProject.title} project`,
         `${currentProject.title} development`,
         `${currentProject.company} collaboration`,
-        `Aditya Shirsatrao ${currentProject.title}`,
         `Aditya Shirsatrao ${currentProject.title}`,
         `Frontend development ${currentProject.title}`,
         `Responsive design ${currentProject.title}`,

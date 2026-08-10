@@ -18,6 +18,7 @@ import { useWindowSize } from '@darkroom.engineering/hamo';
 const seo = {
   title: 'Aditya Shirsatrao - Projects',
   description: 'Explore my portfolio to see projects from distributed systems, AI products, and full-stack web apps built with React, Node.js, Python, FastAPI and more.',
+  path: '/projects',
   keywords: [
     'Aditya Shirsatrao Projects',
     'Portfolio Showcase',

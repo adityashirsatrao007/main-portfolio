@@ -8,6 +8,7 @@ import CustomHead from '@src/components/dom/CustomHead';
 const seo = {
   title: 'Aditya Shirsatrao - About',
   description: 'Learn about my journey, values, and commitment to quality full-stack and AI-driven solutions.',
+  path: '/about',
   keywords: [
     'Aditya Shirsatrao',
     'About Aditya Shirsatrao',

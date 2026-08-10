@@ -9,6 +9,7 @@ import CustomHead from '@src/components/dom/CustomHead';
 const seo = {
   title: 'Aditya Shirsatrao - Full Stack Developer Portfolio',
   description: 'Full Stack Developer and AI Engineer from India, crafting sleek web, desktop, and mobile apps. Building distributed systems, AI-powered products, and immersive digital experiences.',
+  path: '',
   keywords: [
     'Aditya Shirsatrao',
     'Full Stack Developer',

@@ -22,7 +22,8 @@ const getSchema = () => ({
   ],
 });
 
-function CustomHead({ title = '', description, keywords }) {
+function CustomHead({ title = '', description, keywords, path = '' }) {
+  const pageUrl = `${SITE_URL_WITH_BASE}${path}`;
   return (
     <>
       <NextHead>
@@ -30,15 +31,16 @@ function CustomHead({ title = '', description, keywords }) {
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta httpEquiv="x-dns-prefetch-control" content="off" />
         <meta name="robots" content={process.env.NODE_ENV !== 'development' ? 'index,follow' : 'noindex,nofollow'} />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content={keywords && keywords.length ? keywords.join(',') : keywords} />
         <meta name="author" content="Aditya Shirsatrao" />
         <meta name="referrer" content="no-referrer" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="IN-MH" />
+        <meta name="geo.placename" content="Solapur, Maharashtra, India" />
 
         {/* Canonical and Title */}
-        <link rel="canonical" href={SITE_URL} />
+        <link rel="canonical" href={pageUrl} />
         <title>{title}</title>
 
         {/* OpenGraph Meta Tags */}
@@ -46,12 +48,15 @@ function CustomHead({ title = '', description, keywords }) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={SITE_URL} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:site_name" content="Aditya Shirsatrao" />
+        <meta property="og:locale" content="en_IN" />
 
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={OG_IMAGE} />
+        <meta name="twitter:title" content={title} />
 
         {/* Favicons */}
         <link rel="icon" href={A('/favicon.ico')} />
@@ -76,10 +81,12 @@ CustomHead.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   keywords: PropTypes.arrayOf(PropTypes.string),
+  path: PropTypes.string,
 };
 
 CustomHead.defaultProps = {
   keywords: [],
+  path: '',
 };
 
 export default CustomHead;
