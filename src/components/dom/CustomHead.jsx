@@ -2,23 +2,21 @@ import NextHead from 'next/head';
 import { NextSeo } from 'next-seo';
 import PropTypes from 'prop-types';
 
-const SITE_URL = 'https://giats.me';
+const SITE_URL = 'https://adityashirsatrao007.github.io';
 const OG_IMAGE = `${SITE_URL}/og.png`;
 
 const getSchema = () => ({
   '@context': 'http://schema.org',
   '@type': 'Person',
-  name: 'Evangelos (Giats) Giatsidis',
-  jobTitle: 'Senior Frontend Developer',
+  name: 'Aditya Shirsatrao',
+  jobTitle: 'Full Stack Developer',
   url: SITE_URL,
   image: OG_IMAGE,
-  email: 'mailto:vaggelisgiats@gmail.com',
-  sameAs: ['https://www.linkedin.com/in/giats/', 'https://github.com/Giats2498', 'https://twitter.com/Giats_', 'https://www.instagram.com/giats_/'],
+  email: 'mailto:adityashirsatrao007@gmail.com',
+  sameAs: ['https://www.linkedin.com/in/adityashirsatrao', 'https://github.com/adityashirsatrao007', 'https://leetcode.com/u/adityashirsatrao007'],
   alumniOf: [
-    { '@type': 'Organization', name: 'Company 1' },
-    { '@type': 'Organization', name: 'Company 2' },
-    { '@type': 'Organization', name: 'Company 3' },
-    { '@type': 'Organization', name: 'Company 4' },
+    { '@type': 'Organization', name: 'N. K. Orchid College of Engineering & Technology' },
+    { '@type': 'Organization', name: 'Unified Mentor Pvt. Ltd' },
   ],
 });
 
@@ -32,7 +30,7 @@ function CustomHead({ title = '', description, keywords }) {
         <meta name="robots" content={process.env.NODE_ENV !== 'development' ? 'index,follow' : 'noindex,nofollow'} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="keywords" content={keywords && keywords.length ? keywords.join(',') : keywords} />
-        <meta name="author" content="Evangelos (Giats) Giatsidis" />
+        <meta name="author" content="Aditya Shirsatrao" />
         <meta name="referrer" content="no-referrer" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="geo.region" content="US" />

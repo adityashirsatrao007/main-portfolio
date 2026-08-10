@@ -6,21 +6,20 @@ import Process from '@src/pages/about/components/process/Process';
 import CustomHead from '@src/components/dom/CustomHead';
 
 const seo = {
-  title: 'Giats - About',
-  description: 'Learn about my journey, values, and commitment to quality web and app solutions.',
+  title: 'Aditya Shirsatrao - About',
+  description: 'Learn about my journey, values, and commitment to quality full-stack and AI-driven solutions.',
   keywords: [
-    'Giats',
-    'About Evangelos Giatsidis',
+    'Aditya Shirsatrao',
+    'About Aditya Shirsatrao',
     'About me',
-    'Frontend Developer Journey',
-    'Web Developer Story',
+    'Full Stack Developer Journey',
+    'Developer Story',
     'Professional Web Development',
-    'Frontend Development Expertise',
-    'Web Design Skills',
+    'Software Engineering Expertise',
     'Web Development Services',
-    'Web Design Expertise',
+    'AI ML Development',
     'Developer Profile',
-    'Quality Web Solutions',
+    'Quality Software Solutions',
   ],
 };
 function Page() {

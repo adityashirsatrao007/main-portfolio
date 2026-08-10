@@ -230,7 +230,7 @@ function Home() {
         </div>
         {!isMobile && (
           <h6 className={clsx('h6', styles.rightContainer)}>
-            With years of experience, I create immersive digital environments that elevate your virtual presence. Join me in redefining digital interaction.
+            I build fast, scalable full-stack products and immersive digital experiences that elevate your virtual presence. Join me in redefining digital interaction.
           </h6>
         )}
       </div>
@@ -250,7 +250,7 @@ function Home() {
       </div>
       {isMobile && (
         <div className={styles.rightContainerMobile}>
-          <h6 className="h6"> With years of experience, I create immersive digital environments that elevate your virtual presence. Join me in redefining digital interaction.</h6>
+          <h6 className="h6"> I build fast, scalable full-stack products and immersive digital experiences that elevate your virtual presence. Join me in redefining digital interaction.</h6>
         </div>
       )}
 

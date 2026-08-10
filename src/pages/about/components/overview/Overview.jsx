@@ -11,7 +11,7 @@ function Overview() {
       <div className={styles.title}>
         {isMobile ? (
           <AppearTitle key="mobile-queto">
-            <h3 className="h3">The front-end developer&apos;s role </h3>
+            <h3 className="h3">The developer&apos;s role </h3>
             <h3 className="h3">
               is like a kind host, <span className="medium">ensuring</span>
             </h3>
@@ -24,7 +24,7 @@ function Overview() {
           </AppearTitle>
         ) : (
           <AppearTitle key="desktop-queto">
-            <h3 className="h3">The front-end developer&apos;s role is like a</h3>
+            <h3 className="h3">The developer&apos;s role is like a</h3>
             <h3 className="h3">
               kind host, <span className="medium">ensuring</span> visitors have
             </h3>
@@ -42,35 +42,42 @@ function Overview() {
       <div className={styles.desc}>
         {!isMobile ? (
           <AppearTitle key="desktop-overview">
-            <h6 className="h6">Hey there! I&apos;m a 26-year-old front-end developer from Greece with a </h6>
-            <h6 className="h6">passion for crafting amazing digital experiences. I studied software</h6>
-            <h6 className="h6">engineering to deepen my understanding of how to build sleek and </h6>
-            <h6 className="h6">efficient websites and apps.</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>When I&apos;m not busy coding, you&apos;ll often find me soaking up inspiration from</h6>
-            <h6 className="h6">the world of design. Whether it&apos;s exploring new color palettes or refining</h6>
-            <h6 className="h6">user interfaces, I love bringing creativity into my work.</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>When I&apos;m not immersed in coding, I enjoy staying active. I love swimming, </h6>
-            <h6 className="h6">rowing, and playing intense PC games to relax and recharge.</h6>
-
+            <h6 className="h6">Hey there! I&apos;m a full-stack developer and ML enthusiast from India with a </h6>
+            <h6 className="h6">passion for building scalable, secure digital products. I&apos;m pursuing a B.Tech</h6>
+            <h6 className="h6">in AI &amp; Data Science at N.K. Orchid College of Engineering to deepen my</h6>
+            <h6 className="h6">understanding of how to build sleek, efficient systems end to end.</h6>
+            <h6 className={clsx(styles.paddingTop, 'h6')}>When I&apos;m not busy coding, you&apos;ll often find me solving algorithmic problems</h6>
+            <h6 className="h6">or contributing to open source. My work has spanned distributed systems,</h6>
+            <h6 className="h6">real-time pipelines, and ML-powered products - winning 1st Place at Hack-to-</h6>
+            <h6 className="h6">Future 3.0 (600+ teams) and 1st Runner-Up at Orchathon 2K26 (800+ teams).</h6>
+            <h6 className={clsx(styles.paddingTop, 'h6')}>I&apos;m also a first-author IEEE researcher (ICCTWC 2026, Scopus-indexed) with a</h6>
+            <h6 className="h6">conference paper on multilingual BERT sentiment and intrusion detection.</h6>
+            <h6 className="h6">366+ LeetCode problems solved, 100+ merged PRs, and I still believe every</h6>
+            <h6 className="h6">project is a chance to get better.</h6>
             <h6 className={clsx(styles.paddingTop, 'h6')}>I&apos;m looking forward to collaborating and creating something great!</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>Evangelos Giatsidis.</h6>
+            <h6 className={clsx(styles.paddingTop, 'h6')}>Aditya Shirsatrao.</h6>
           </AppearTitle>
         ) : (
           <AppearTitle key="mobile-overview">
-            <h6 className="h6">Hey there! I&apos;m a 26-year-old front-end developer from Greece </h6>
-            <h6 className="h6">with a passion for crafting amazing digital experiences. I studied </h6>
-            <h6 className="h6">software engineering to deepen my understanding of how to </h6>
-            <h6 className="h6">build sleek and efficient websites and apps.</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>When I&apos;m not busy coding, you&apos;ll often find me soaking up </h6>
-            <h6 className="h6">inspiration from the world of design. Whether it&apos;s exploring new</h6>
-            <h6 className="h6">color palettes or refining user interfaces, I love bringing</h6>
-            <h6 className="h6">creativity into my work.</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>When I&apos;m not immersed in coding, I enjoy staying active. I love</h6>
-            <h6 className="h6">swimming, rowing, and playing intense PC games to relax</h6>
-            <h6 className="h6">and recharge.</h6>
+            <h6 className="h6">Hey there! I&apos;m a full-stack developer and ML enthusiast</h6>
+            <h6 className="h6">from India with a passion for building scalable, secure</h6>
+            <h6 className="h6">digital products. I&apos;m pursuing a B.Tech in AI &amp; Data</h6>
+            <h6 className="h6">Science at N.K. Orchid College of Engineering to build</h6>
+            <h6 className="h6">sleek, efficient systems end to end.</h6>
+            <h6 className={clsx(styles.paddingTop, 'h6')}>When I&apos;m not busy coding, you&apos;ll often find me solving</h6>
+            <h6 className="h6">algorithmic problems or contributing to open source.</h6>
+            <h6 className="h6">My work spans distributed systems, real-time pipelines,</h6>
+            <h6 className="h6">and ML-powered products - winning 1st Place at Hack-</h6>
+            <h6 className="h6">to-Future 3.0 (600+ teams) and 1st Runner-Up at</h6>
+            <h6 className="h6">Orchathon 2K26 (800+ teams).</h6>
+            <h6 className={clsx(styles.paddingTop, 'h6')}>I&apos;m also a first-author IEEE researcher (ICCTWC 2026,</h6>
+            <h6 className="h6">Scopus-indexed) with a paper on multilingual BERT</h6>
+            <h6 className="h6">sentiment and intrusion detection. 366+ LeetCode</h6>
+            <h6 className="h6">problems solved, 100+ merged PRs, and I still believe</h6>
+            <h6 className="h6">every project is a chance to get better.</h6>
             <h6 className={clsx(styles.paddingTop, 'h6')}>I&apos;m looking forward to collaborating and creating something</h6>
             <h6 className="h6">great!</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>Evangelos Giatsidis.</h6>
+            <h6 className={clsx(styles.paddingTop, 'h6')}>Aditya Shirsatrao.</h6>
           </AppearTitle>
         )}
       </div>

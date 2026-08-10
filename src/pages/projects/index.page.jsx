@@ -16,10 +16,10 @@ import { useStore } from '@src/store';
 import { useWindowSize } from '@darkroom.engineering/hamo';
 
 const seo = {
-  title: 'Giats - Projects',
-  description: 'Explore my portfolio to see a range of frontend projects, from responsive websites to web applications. Discover my work with React, Nextjs, React three fiber, Electron and more.',
+  title: 'Aditya Shirsatrao - Projects',
+  description: 'Explore my portfolio to see projects from distributed systems, AI products, and full-stack web apps built with React, Node.js, Python, FastAPI and more.',
   keywords: [
-    'Giats Projects',
+    'Aditya Shirsatrao Projects',
     'Portfolio Showcase',
     'Frontend Development Examples',
     'Web Design Portfolio',
@@ -32,7 +32,7 @@ const seo = {
     'React Three Fiber Projects',
     'Electron Projects',
     'Professional Web Development',
-    'Evangelos Giatsidis Projects',
+    'Aditya Shirsatrao Projects',
   ],
 };
 

@@ -16,7 +16,7 @@ function Quote() {
       <h3 ref={textRef} className={clsx(styles.text, 'h3')}>
         {!isLoading && (
           <TextOpacity textRef={textRef.current} trigger={rootRef.current}>
-            When starting a new project, it&apos;s crucial to choose the appropriate tools. With prior experience in this area, I am confident in selecting the tools that will guide us to success.
+            I write code so the future me (and the future you) suffers less_ measuring success by systems that scale, models that explain themselves, and open-source that outlives its deadline.
           </TextOpacity>
         )}
       </h3>

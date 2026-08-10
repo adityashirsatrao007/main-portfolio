@@ -42,7 +42,7 @@ function About() {
 
   const renderImageContainer = () => (
     <div className={styles.imageContainer}>
-      <Image priority src="/giats/front.webp" sizes="100%" fill alt="Evangelos Giatsidis" />
+      <Image priority src="/giats/front.webp" sizes="100%" fill alt="Aditya Shirsatrao" />
     </div>
   );
 
@@ -51,7 +51,7 @@ function About() {
       <div className={clsx(styles.nameContainer, 'layout-block-inner')}>
         <AppearTitle>
           <h1 className={clsx('h1', 'medium')}>Hey, My name&apos;s</h1>
-          <h1 className={clsx('h1', 'medium')}>Evangelos Giatsidis!</h1>
+          <h1 className={clsx('h1', 'medium')}>Aditya Shirsatrao!</h1>
         </AppearTitle>
       </div>
 
@@ -59,28 +59,29 @@ function About() {
         {isMobile ? renderImageContainer() : null}
         <div className={clsx(styles.descWrapper)} ref={animatedImageRef}>
           <AppearTitle>
-            <div className="p-l">“My solo learning journey as a self-taught</div>
-            <div className="p-l">developer empowers me to solve problems</div>
-            <div className="p-l">creatively and efficiently, supporting the</div>
-            <div className="p-l">successful completion of your project goals”</div>
+            <div className="p-l">“From self-taught coder to building</div>
+            <div className="p-l">distributed systems and AI products, I&apos;m</div>
+            <div className="p-l">driven to solve real problems with clean</div>
+            <div className="p-l">code and relentless curiosity.”</div>
           </AppearTitle>
         </div>
         {!isMobile ? renderImageContainer() : null}
         <div className={clsx(styles.descWrapperBottom)}>
           {!isMobile ? (
             <AppearTitle key="desktop-descWrapperBottom">
-              <h6 className="h6">A passionate front-end developer hailing from Greece.</h6>
-              <h6 className="h6">With a strong eye for design and a dedication to</h6>
-              <h6 className="h6">creating seamless user experiences. I specialize in</h6>
-              <h6 className="h6">bringing web applications to life with clean and efficient</h6>
-              <h6 className="h6">code.</h6>
+              <h6 className="h6">A passionate full-stack developer hailing from India.</h6>
+              <h6 className="h6">With a strong eye for system design and AI, I build</h6>
+              <h6 className="h6">scalable & secure products. I specialize in</h6>
+              <h6 className="h6">bringing distributed systems and ML-powered</h6>
+              <h6 className="h6">apps to life with clean and efficient code.</h6>
             </AppearTitle>
           ) : (
             <AppearTitle key="mobile-descWrapperBottom">
-              <h6 className="h6"> A passionate front-end developer hailing from Greece. With a</h6>
-              <h6 className="h6">strong eye for design and a dedication to creating seamless</h6>
-              <h6 className="h6">user experiences. I specialize in bringing web applications to life</h6>
-              <h6 className="h6">with clean and efficient code.</h6>
+              <h6 className="h6"> A passionate full-stack developer hailing from India. With</h6>
+              <h6 className="h6">a strong eye for system design and AI, I build scalable</h6>
+              <h6 className="h6">and secure high-performance apps. I specialize in</h6>
+              <h6 className="h6">bringing distributed systems and ML-powered apps to</h6>
+              <h6 className="h6">life with clean and efficient code.</h6>
             </AppearTitle>
           )}
           <div className={clsx(styles.buttonContainer)}>
