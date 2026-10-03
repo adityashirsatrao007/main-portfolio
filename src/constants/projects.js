@@ -28,7 +28,7 @@ const projects = [
     ],
     desc: [
       'A dependency-free C++17 limit order book with price-time priority and FIFO per level, supporting LIMIT, MARKET, STOP, STOP-LIMIT and GTC/IOC/FOK semantics with deterministic integer quantities.',
-      'Benchmarked matching throughput at 10.9M orders/sec (0.09µs/order), exposing a trade tape and depth feed over a FastAPI/WebSocket bridge with CI builds and tests on every PR.',
+      'Benchmarked matching throughput at ~800K orders/sec (1.3µs/order, single-threaded), exposing a trade tape and depth feed over a FastAPI/WebSocket bridge with CI builds and tests on every PR.',
     ],
   },
   {
